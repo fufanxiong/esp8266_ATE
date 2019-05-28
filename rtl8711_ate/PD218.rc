@@ -1,0 +1,756 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PD218.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PD218.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_password DIALOGEX 0, 0, 273, 95
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "输入密码"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EPassword,90,32,85,15,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,0,74,76,20
+    DEFPUSHBUTTON   "确定",IDOK,197,74,76,20
+    CTEXT           "请输入密码",IDC_enterPassword,35,15,202,13
+END
+
+IDD_PD218 DIALOGEX 0, 0, 792, 493
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RTL8711_ATE_READ V1.0.0.0"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,2,91,388,256
+    CTEXT           "A  校验",IDC_CurTestObj,3,1,387,44,SS_CENTERIMAGE
+    CTEXT           "校验成功",IDC_CurTestItem,3,43,387,44,SS_CENTERIMAGE
+    PUSHBUTTON      "开始",IDC_Start,303,392,184,69
+    PUSHBUTTON      "A模块测试",IDC_Audio_pio_fail,3,422,183,68
+    PUSHBUTTON      "B模块测试",IDC_Audio_pio_pass,614,418,174,72
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,399,91,389,256
+    DEFPUSHBUTTON   "确定",IDOK,163,10,50,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,71,12,50,14,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    CTEXT           "校验成功",IDC_CurTestItem2,399,43,381,44,SS_CENTERIMAGE
+    CTEXT           "B  校验",IDC_CurTestObj2,399,1,381,44,SS_CENTERIMAGE
+    PUSHBUTTON      "开始自动化测试",IDC_AUTO_RUN,514,448,97,42,NOT 
+                    WS_VISIBLE
+    LTEXT           "TEST NUM A",IDC_TEST_NUMA,2,386,272,27,SS_CENTERIMAGE
+    RTEXT           "TEST NUM B",IDC_TEST_NUMB,487,386,273,28,SS_CENTERIMAGE
+    EDITTEXT        IDC_ADEV_ADDRESS,2,348,285,34,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BDEV_ADDRESS,504,349,284,32,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    CTEXT           "下一校验地址",IDC_SBDEV_ADDRESS,295,349,181,31
+    CTEXT           "2.35mv",IDC_MultimeterVal,314,471,122,11,NOT WS_VISIBLE
+    PUSHBUTTON      "继续",IDC_CONTINUE_RUN,188,447,89,43,NOT WS_VISIBLE
+END
+
+IDD_MCFJ_DEAL DIALOGEX 0, 0, 630, 355
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "配置文件修改"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,446,324,73,24
+    PUSHBUTTON      "取消",IDCANCEL,550,324,73,24
+    GROUPBOX        "IO测试选项",IDC_STATIC,10,11,161,106,BS_CENTER
+    CONTROL         "B模组测试使能",IDC_BMODLE_SEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,170,67,13
+    CONTROL         "频率校准",IDC_Tx_Xtal_Adj,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,333,54,65,10
+    PUSHBUTTON      "导出配置文件",IDC_OUTPUT_CFJ,103,322,68,26
+    PUSHBUTTON      "导入配置文件",IDC_INPUT_CFJ,7,322,68,26
+    CONTROL         "读MAC地址",IDC_read_addr,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,70,54,10
+    CONTROL         "输入MAC地址",IDC_Tx_WriteUid,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,52,55,10
+    CONTROL         "N4010A测试",IDC_N4010A_TEST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,333,35,59,10
+    CONTROL         "开机电流测试",IDC_PWR_ON_CUR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,149,63,13
+    CONTROL         "烧录软件",IDC_WRITE_FILE,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,112,248,44,13
+    GROUPBOX        "RF 功率参数对应的差值表",IDC_STATIC,507,9,108,153,
+                    BS_CENTER | NOT WS_VISIBLE
+    LTEXT           "功率参数",IDC_STATIC,515,26,35,9,NOT WS_VISIBLE
+    LTEXT           "功率差值(dbm)",IDC_STATIC,557,26,54,8,NOT WS_VISIBLE
+    LTEXT           "参数2",IDC_STATIC,524,39,22,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP1,557,38,41,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数1",IDC_STATIC,523,55,22,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP2,557,53,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数0",IDC_STATIC,523,70,22,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP3,557,68,41,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数-1",IDC_STATIC,523,86,25,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP4,557,84,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数-2",IDC_STATIC,523,101,26,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP5,557,99,41,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数-3",IDC_STATIC,523,117,26,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP6,557,115,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数-4",IDC_STATIC,523,131,27,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP7,557,129,41,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "参数-5",IDC_STATIC,523,147,26,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_STEP8,557,145,41,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    GROUPBOX        "RF 功率不需要调整的范围",IDC_STATIC,509,175,106,55,
+                    BS_CENTER | NOT WS_VISIBLE
+    LTEXT           "最小值(dBm)",IDC_STATIC,516,193,44,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_MIN,563,191,39,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "最大值(dBm)",IDC_STATIC,516,211,44,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_MAX,564,209,39,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    GROUPBOX        "RF 功率可调整的范围",IDC_STATIC,509,242,106,55,
+                    BS_CENTER | NOT WS_VISIBLE
+    LTEXT           "最小值(dBm)",IDC_STATIC,515,260,44,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_ADJ_MIN,563,258,39,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "最大值(dBm)",IDC_STATIC,515,278,44,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_PWR_ADJ_MAX,563,276,39,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "选择中文",IDC_LANGUAGE_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,201,272,49,10
+    CONTROL         "关机电流测试",IDC_PWR_OFF_CUR,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,193,168,65,13
+    CONTROL         "默认地址验证",IDC_Verify_Def_Addr,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,111,270,63,
+                    13
+    CONTROL         "PIO[9]检测",IDC_PIO_09_Chk,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,15,247,58,13
+    GROUPBOX        "其他杂项",IDC_STATIC,10,131,161,90,BS_CENTER
+    GROUPBOX        "DUT测试选项",IDC_STATIC,184,11,125,106,BS_CENTER
+    GROUPBOX        "RF测试选项",IDC_STATIC,324,11,169,210,BS_CENTER
+    GROUPBOX        "电流测试选项",IDC_STATIC,184,130,126,91,BS_CENTER
+    CONTROL         "LF PW",IDC_LF_PW_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,333,73,36,10
+    CONTROL         "MF PW",IDC_MF_PW_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,379,73,36,10
+    CONTROL         "HF PW",IDC_HF_PW_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,425,73,36,10
+    CONTROL         "LF SS",IDC_LF_SS_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,333,111,36,10
+    CONTROL         "MF SS",IDC_MF_SS_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,379,111,36,10
+    CONTROL         "HF SS",IDC_HF_SS_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,425,111,36,10
+    CONTROL         "使用屏蔽箱",IDC_USE_TBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,152,54,12
+    CONTROL         "Uart Loopback",IDC_UART_LOOPBACK,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,15,267,68,
+                    10
+    CONTROL         "保留CS参数",IDC_KEEP_CSPAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,88,56,10
+    CONTROL         "",IDC_SEL_PROJECT,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP,14,
+                    295,60,74
+    CONTROL         "自动写",IDC_Tx_WriteUid_Auto,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,253,52,40,10
+    CONTROL         "MCU IO 检测",IDC_MCU_IO_CHK,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,20,41,60,10
+    CONTROL         "8711 IO 检测",IDC_8711_IO_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,59,64,10
+    CONTROL         "读软件版本",IDC_READ_SOFT_VER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,34,56,10
+    CONTROL         "LF EVM",IDC_LF_EVM_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,333,92,40,10
+    CONTROL         "MF EVM",IDC_MF_EVM_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,379,92,40,10
+    CONTROL         "HF EVM",IDC_HF_EVM_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,425,92,40,10
+END
+
+IDD_RegCode DIALOGEX 0, 0, 360, 167
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "input register ip"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EAddress,69,59,221,38,ES_RIGHT,WS_EX_RIGHT
+    DEFPUSHBUTTON   "confirm",IDOK,284,147,76,20
+    PUSHBUTTON      "cancel",IDCANCEL,0,147,76,20
+    CTEXT           "input BT address",IDC_enterRegisterCode,77,21,202,29
+END
+
+IDD_NEWPASSWORD DIALOGEX 0, 0, 273, 95
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "输入密码"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_OLDPASSWORD,118,5,85,15,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,0,74,76,20
+    DEFPUSHBUTTON   "确定",IDOK,197,74,76,20
+    RTEXT           "请输入旧密码",IDC_STATIC1,48,7,65,13
+    EDITTEXT        IDC_NEWPASSWORD,118,23,85,15,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "请输入新密码",IDC_STATIC2,48,25,65,13
+    EDITTEXT        IDC_CONFIRM,118,41,85,15,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "确认新密码",IDC_STATIC3,48,43,65,13
+END
+
+IDD_NEWDATE DIALOGEX 0, 0, 273, 95
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "输入程序的截止日期"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_year,118,5,85,15,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,0,74,76,20
+    DEFPUSHBUTTON   "确定",IDOK,197,74,76,20
+    RTEXT           "请输入截止日期的“年”",IDC_STATIC1,16,7,97,13
+    EDITTEXT        IDC_month,118,23,85,15,ES_CENTER | ES_AUTOHSCROLL
+    RTEXT           "请输入截止日期的“月”",IDC_STATIC2,16,25,97,13
+    EDITTEXT        IDC_day,118,41,85,15,ES_CENTER | ES_AUTOHSCROLL
+    RTEXT           "请输入截止日期的“日”",IDC_STATIC3,16,43,97,13
+END
+
+IDD_SelDutCom DIALOG DISCARDABLE  0, 0, 347, 175
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "选择SPI口"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确认当前分配",IDOK,251,138,96,37
+    PUSHBUTTON      "取消当前分配",IDCANCEL,0,138,96,37
+    COMBOBOX        IDC_COMBO_A,36,70,59,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_AG,108,70,59,77,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_B,180,70,59,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BG,252,70,59,77,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "选择DUT SPI口",IDC_SELCOM_PROMPT,38,13,269,42
+    CONTROL         "A DEV",IDC_RADIO_A,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,36,60,59,10
+    CONTROL         "AGloden DEV",IDC_RADIO_AG,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,108,60,59,10
+    CONTROL         "B DEV",IDC_RADIO_B,"Button",BS_AUTORADIOBUTTON,180,60,
+                    59,10
+    CONTROL         "BGloden DEV",IDC_RADIO_BG,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,252,60,59,10
+END
+
+IDD_SelDir DIALOG DISCARDABLE  0, 0, 377, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择订单号及人员工号"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确认选择",IDOK,289,142,81,28
+    PUSHBUTTON      "取消选择",IDCANCEL,7,141,73,29
+    CTEXT           "选择测试订单号及人员工号",IDC_CSEL_ORDER_NUM,88,21,223,
+                    27
+    CTEXT           "选择测试订单号",IDC_STATIC,64,66,76,13
+    CTEXT           "选择测试人员工号",IDC_STATIC,230,67,82,16
+    COMBOBOX        IDC_COMBO_ORDER,51,81,94,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_WK_NUM,235,83,78,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SetPar DIALOGEX 0, 0, 755, 507
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置系统参数"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,625,477,130,30
+    PUSHBUTTON      "取消",IDCANCEL,1,477,130,30
+    GROUPBOX        "",IDC_STATIC,16,16,122,96
+    EDITTEXT        IDC_CUR_ADDR,27,49,92,16,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_ADDR,27,88,92,17,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "当前即将分配的MAC地址 (或最小MAC地址)",IDC_SBT_ADDR,29,
+                    30,89,16
+    CTEXT           "最大MAC地址",IDC_SEND_ADDR,33,75,82,9
+    GROUPBOX        "",IDC_STATIC,7,7,526,163
+    GROUPBOX        "",IDC_STATIC,550,7,190,164
+    GROUPBOX        "",IDC_STATIC,421,16,90,144
+    LTEXT           "A RF 通路损耗(dBm)",IDC_SARF_LOSS,426,27,80,10
+    EDITTEXT        IDC_ARF_LOSS,457,41,44,12,ES_AUTOHSCROLL
+    LTEXT           "B RF 通路损耗(dBm)",IDC_SBRF_LOSS,426,96,75,10
+    EDITTEXT        IDC_BRF_LOSS,457,111,44,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,402,526,50,NOT WS_VISIBLE
+    LTEXT           "烧录文件名：",IDC_STATIC,16,417,55,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_WFILE,16,430,508,16,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,7,176,526,221
+    RTEXT           "选择 DUT/金机",IDC_SG_SEL,31,208,53,9
+    COMBOBOX        IDC_SEL_GOLDEN,30,221,57,101,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,122,186,400,34
+    RTEXT           "MAC地址",IDC_SG_ADDR,128,196,40,18
+    EDITTEXT        IDC_G_ADDR,174,194,81,16,ES_AUTOHSCROLL
+    RTEXT           "蓝牙名字",IDC_SG_NAME,278,197,35,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_G_NAME,316,194,93,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    RTEXT           "软件版本",IDC_SG_VER,423,196,35,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_G_VER,462,194,49,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,122,235,233,85
+    RTEXT           "RF 灵敏度(dBm)",IDC_SG_SENS,317,364,70,15,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_G_SENS,215,364,44,16,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    RTEXT           "RF 最大频偏(Hz)",IDC_SG_FOFFSET,127,367,74,10,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_G_FOFFSET,397,363,41,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "低频点",IDC_STATIC,426,42,28,10
+    EDITTEXT        IDC_ARF_LOSSM,457,58,44,12,ES_AUTOHSCROLL
+    LTEXT           "中频点",IDC_STATIC,426,59,28,10
+    EDITTEXT        IDC_ARF_LOSSH,457,74,44,12,ES_AUTOHSCROLL
+    LTEXT           "高频点",IDC_STATIC,426,75,28,10
+    LTEXT           "低频点",IDC_STATIC,426,112,27,8
+    EDITTEXT        IDC_BRF_LOSSM,457,127,44,12,ES_AUTOHSCROLL
+    LTEXT           "中频点",IDC_STATIC,426,128,27,8
+    EDITTEXT        IDC_BRF_LOSSH,457,142,44,12,ES_AUTOHSCROLL
+    LTEXT           "高频点",IDC_STATIC,426,143,27,8
+    GROUPBOX        "",IDC_STATIC,150,16,123,96
+    LTEXT           "默认晶体参数(10进制)",IDC_SDEF_XTAL_PAR,162,32,48,16
+    EDITTEXT        IDC_DEF_XTAL_PAR,222,33,44,15,ES_AUTOHSCROLL
+    LTEXT           "晶体参数最小值(10进制)",IDC_STATIC,162,58,56,16
+    EDITTEXT        IDC_XTAL_MIN,222,56,44,16,ES_AUTOHSCROLL
+    LTEXT           "晶体参数最大值(10进制)",IDC_STATIC,162,81,56,16
+    EDITTEXT        IDC_XTAL_MAX,222,80,43,16,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,16,185,94,204
+    RTEXT           "RF 发射平均功率(dBm)",IDC_SG_RF_PWR_CENTER,123,275,91,
+                    11
+    EDITTEXT        IDC_G_RF_AVPWR_L,218,271,35,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_RF_AVPWR_M,264,271,34,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_RF_AVPWR_H,308,271,34,18,ES_AUTOHSCROLL
+    LTEXT           "低频点",IDC_STATIC,223,250,27,12
+    LTEXT           "中频点",IDC_STATIC,269,250,27,12
+    LTEXT           "高频点",IDC_STATIC,312,250,27,12
+    GROUPBOX        "",IDC_STATIC,386,246,136,74
+    LTEXT           "4010频偏补偿(Hz)",IDC_STATIC,585,31,70,8
+    EDITTEXT        IDC_ARF_FLOSSH,660,27,41,15,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,16,116,392,44
+    LTEXT           "开机电流最小值(mA)",IDC_STATIC,24,134,73,11
+    EDITTEXT        IDC_PWRON_CUR_MIN,99,132,43,13,ES_AUTOHSCROLL
+    LTEXT           "开机电流最大值(mA)",IDC_STATIC,279,134,72,11
+    EDITTEXT        IDC_PWRON_CUR_MAX,354,132,43,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,285,16,123,96
+    LTEXT           "默认功率指数(10进制)",IDC_SDEF_POWER_PAR,295,35,48,16
+    EDITTEXT        IDC_DEF_POWER_PAR,357,36,44,15,ES_AUTOHSCROLL
+    LTEXT           "功率指数最小值(10进制)",IDC_STATIC,295,61,56,16
+    EDITTEXT        IDC_POWER_MIN,357,59,44,16,ES_AUTOHSCROLL
+    LTEXT           "功率指数最大值(10进制)",IDC_STATIC,295,85,56,16
+    EDITTEXT        IDC_POWER_MAX,357,83,43,16,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,550,376,190,75,NOT WS_VISIBLE
+    LTEXT           "DUT1 UART测试",IDC_STATIC,558,400,53,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_DUT1_UART_PORT,616,396,39,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DUT1_UART_RATE,680,396,54,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "DUT2 UART测试",IDC_STATIC,558,426,53,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_DUT2_UART_PORT,616,422,39,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DUT2_UART_RATE,681,422,53,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "PORT",IDC_STATIC,622,383,17,8,NOT WS_VISIBLE
+    LTEXT           "BAUDRATE",IDC_STATIC,689,383,33,8,NOT WS_VISIBLE
+    RTEXT           "RF 预期功率值",IDC_SG_EXP_POWER,398,284,53,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_G_EXP_POWER,463,280,41,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    RTEXT           "RF 灵敏度(dBm)",IDC_SG_SENS2,579,326,74,10
+    EDITTEXT        IDC_DUT_SENSPOWER,660,324,41,15,ES_AUTOHSCROLL
+    RTEXT           "RF 最大频偏(Hz)",IDC_SG_FOFFSET2,580,191,74,10
+    EDITTEXT        IDC_DUT_FOFFSET,660,188,41,15,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,550,177,190,189
+    RTEXT           "RF 预期功率值(dBm)",IDC_SG_EXP_POWER2,184,481,74,10,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DUT_INPUTPOWER,261,478,41,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    RTEXT           "RF 功率最小值(dBm)",IDC_S_AVPOWERMIN,580,214,74,10
+    EDITTEXT        IDC_DUT_AVPOWERMIN,660,211,41,15,ES_AUTOHSCROLL
+    RTEXT           "RF 功率最大值(dBm)",IDC_S_AVPOWERMAX,580,237,74,10
+    EDITTEXT        IDC_DUT_AVPOWERMAX,660,234,41,15,ES_AUTOHSCROLL
+    RTEXT           "RF 发包数量",IDC_S_SENSPACKETS,379,483,74,10,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DUT_SENSPACKETS,460,480,41,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EVM_MAX,660,303,41,15,ES_AUTOHSCROLL
+    RTEXT           "RF 最大EVM值(dBm)",IDC_STATIC,580,304,74,10
+    RTEXT           "RF 最大接收错误率(%)",IDC_STATIC,573,348,81,8
+    EDITTEXT        IDC_SENS_ERR_PER_MAX,660,345,41,14,ES_AUTOHSCROLL
+    LTEXT           "BW20与BW40差值",IDC_STATIC,597,259,57,12
+    EDITTEXT        IDC_BW20_BW40_DF,660,257,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_EVM_LOSS,608,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "A RF EVM补偿",IDC_STATIC,555,67,49,8
+    LTEXT           "B RF EVM补偿",IDC_STATIC,555,88,49,8
+    LTEXT           "低频点",IDC_STATIC,616,53,25,8
+    LTEXT           "中频点",IDC_STATIC,658,53,25,8
+    LTEXT           "高频点",IDC_STATIC,700,53,25,8
+    EDITTEXT        IDC_A_EVM_LOSS,608,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A_EVM_LOSSM,651,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A_EVM_LOSSH,694,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_EVM_LOSSM,651,86,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_EVM_LOSSH,694,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "A灵敏度功率补偿",IDC_STATIC,554,123,61,8
+    LTEXT           "B灵敏度功率补偿",IDC_STATIC,554,143,61,8
+    LTEXT           "低频点",IDC_STATIC,621,107,25,8
+    LTEXT           "中频点",IDC_STATIC,661,107,25,8
+    LTEXT           "高频点",IDC_STATIC,700,107,25,8
+    EDITTEXT        IDC_A_SENS_LOSS,620,121,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_SENS_LOSS,620,141,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A_SENS_LOSSM,659,121,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A_SENS_LOSSH,698,121,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_SENS_LOSSM,659,141,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_SENS_LOSSH,698,141,30,14,ES_AUTOHSCROLL
+    LTEXT           "RF 预期EVM",IDC_STATIC,399,303,41,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_G_EXP_EVM,463,300,40,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "RF EVM(dBm)",IDC_STATIC,169,296,45,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_G_EXP_EVM_L,218,295,35,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_EXP_EVM_M,264,295,35,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_EXP_EVM_H,308,295,35,16,ES_AUTOHSCROLL
+    LTEXT           "OFDM与BW40差值",IDC_STATIC,597,282,57,8
+    EDITTEXT        IDC_OFDM_BW40_DF,660,279,40,14,ES_AUTOHSCROLL
+    LTEXT           "RF 仪器补偿",IDC_STATIC,400,264,45,8
+    EDITTEXT        IDC_INSTRUMENT_COMPENSATE,463,261,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,387,321,135,35
+    LTEXT           "设置软件版本",IDC_STATIC,391,338,49,12
+    EDITTEXT        IDC_SET_SOFT_VER,447,332,69,18,ES_CENTER | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_AudioScale DIALOG DISCARDABLE  0, 0, 430, 237
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "音频通道校正"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,332,199,94,31
+    PUSHBUTTON      "取消",IDCANCEL,6,197,96,33
+    CTEXT           "现在开始调节音频测试参数！！\n请勿将手放入测试箱",
+                    IDC_PROMPT,69,23,308,116
+    EDITTEXT        IDC_AG_VAmplitude,133,204,80,21,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_BG_VAmplitude,236,203,77,21,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    CTEXT           "A 金机幅度(mv)",IDC_AG_Amplitude,106,164,105,23
+    CTEXT           "B 金机幅度(mv)",IDC_BG_Amplitude,236,163,98,20
+END
+
+IDD_RFPWR_LOSS DIALOG DISCARDABLE  0, 0, 575, 439
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RF 补偿设置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,480,402,88,30
+    PUSHBUTTON      "取消",IDCANCEL,7,402,92,30
+    CTEXT           "请在 A 上放入金机1\nB 上放入金机2",IDC_PROMPT,20,15,535,
+                    38,SS_SUNKEN
+    CTEXT           "",IDC_PROMPT2,20,62,535,43,SS_SUNKEN
+    LTEXT           "A DUT 功率\n",IDC_ARF_PWR,19,124,245,199,SS_SUNKEN
+    LTEXT           "B DUT 功率\n",IDC_BRF_PWR,316,123,239,200,SS_SUNKEN
+    PUSHBUTTON      "运行 RF 功率测试",IDC_DO_PWRCAL,207,352,164,44
+    EDITTEXT        IDC_AGOLD_ADDR,22,352,165,30,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BGOLD_ADDR,389,352,173,30,ES_AUTOHSCROLL
+END
+
+IDD_LED_ADJUST DIALOG DISCARDABLE  0, 0, 672, 447
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LED颜色检测校正"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,578,408,87,32
+    PUSHBUTTON      "取消",IDCANCEL,7,408,82,32
+    CTEXT           "请在 A 上放入金机1\nB 上放入金机2",IDC_PROMPT,7,12,658,
+                    38,SS_SUNKEN
+    LTEXT           "Static",IDC_A_LED,7,124,292,182,SS_SUNKEN
+    LTEXT           "Static",IDC_B_LED,376,123,289,179,SS_SUNKEN
+    CTEXT           "",IDC_PROMPT2,7,58,658,49,SS_SUNKEN
+    PUSHBUTTON      "开始检测LED灯亮度",IDC_LED_CAL_BTN,222,323,239,65
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 282, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择测试项"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,225,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,225,24,50,14
+    GROUPBOX        "选择测试项",IDC_STATIC,7,7,191,103
+    CONTROL         "电流测试",IDC_PWR_CUR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,23,48,10
+    CONTROL         "IO口测试",IDC_PIO_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,40,47,10
+    CONTROL         "ADC测试",IDC_ADC_CHK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,57,46,10
+    CONTROL         "写MAC地址",IDC_WRITE_MAC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,91,55,10
+    CONTROL         "自动",IDC_AUTO_W_MAC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,91,32,10
+    CONTROL         "频率校正",IDC_FREQUENCY_TEST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,23,48,10
+    CONTROL         "功率测试",IDC_POWER_TEST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,40,48,10
+    CONTROL         "发送测试",IDC_SEND_TEST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,57,48,10
+    CONTROL         "接收测试",IDC_RECV_TEST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,74,48,10
+    CONTROL         "显示MAC地址",IDC_SHOW_MAC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,74,63,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ESP8266_ATE\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "2017/09/20\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ESP8266_ATE.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ESP8266_ATE\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_password, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_PD218, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 788
+        VERTGUIDE, 3
+        VERTGUIDE, 390
+        VERTGUIDE, 399
+        VERTGUIDE, 780
+        BOTTOMMARGIN, 490
+    END
+
+    IDD_MCFJ_DEAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 623
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_NEWPASSWORD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_NEWDATE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_SelDir, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_LED_ADJUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 665
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 440
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "  配置  "
+    BEGIN
+        MENUITEM "设置系统参数",                ID_MCFG_DLG
+        MENUITEM "修改配置文件",                ID_MMCurConfig
+        MENUITEM "设置有效日期",                ID_MSET_DATE
+        MENUITEM "授权计算机",                  ID_MAUTHORITY
+        POPUP "修改密码"
+        BEGIN
+            MENUITEM "设置系统参数密码",            ID_MPAR_PASSWORD
+            MENUITEM "测试选项密码",                ID_MTITEM_PASSWORD
+            MENUITEM "配置文件密码",                ID_MCFG_PASSWORD
+            MENUITEM "设置有效日期密码",            ID_MDATE_PASSWORD
+            MENUITEM "授权计算机密码",              ID_MAUTHORITY_PASSWORD
+        END
+        MENUITEM "退出程序",                    ID_EXIT_DIALOG
+    END
+    POPUP "  连接仪器  "
+    BEGIN
+        MENUITEM "连接 A模块端口",              ID_CN_AMODLE
+        MENUITEM "连接万用表",                  ID_CN_Multimeter
+        MENUITEM "连接屏蔽箱",                  ID_CN_TBOX
+        MENUITEM "连接 N4010A",                 ID_CN_TOOL_DEV
+        MENUITEM "配置音频通路",                ID_CFG_AUDIO_ROUT
+        MENUITEM "连接频率计",                  ID_CN_FCounter
+        MENUITEM "复位计数器",                  ID_CLR_TCOUNT
+        MENUITEM "RF 功率补偿计算",             ID_RFPWR_LOSS_ADJ
+        MENUITEM "LED亮度估计",                 ID_lLED_ADC_CAL
+    END
+    MENUITEM "PO23501-20150612-01 LIU123456", ID_MENUITEM32789
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PD218.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

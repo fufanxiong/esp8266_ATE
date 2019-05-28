@@ -1,0 +1,8 @@
+0, *, RS, (erase)  # Logical 0: Partition for DFU
+#1, 32K, RO, (erase)  # Logical 1: Audio Prompt partition #1,1
+#2, 32K, RO, (erase)  # Logical 1: Audio Prompt partition #1,2
+#3, 16K, RO, (erase)  # Logical 2: Audio Prompt partition #2,1
+#4, 16K, RO, (erase)  # Logical 2: Audio Prompt partition #2,2
+#5, 64K, RS, (erase)  # Logical 3: Test partition #1
+#6, 64K, RS, (erase)  # Logical 3: Test partition #2
+#7, 8K, RS, (erase)  # Logical 4: Single-banked test partition

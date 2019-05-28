@@ -1,0 +1,35 @@
+===========================================================
+
+History
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3/11/2016
+1.Optimized error acquisition test results interface.
+
+3/8/2016
+1.Optimize IO test internal interface, and re-compile all.
+
+3/7/2016
+1.Added support for GPIO short circuit problem detection.
+2.To use the external IO to detect MBIAS.
+
+3/3/2016
+1.Support for more IO pin test.
+
+3/1/2016
+1.Remove enable mark in the test interface in the limit(eg: WriteMAC、WriteName、RFTestFrequency、TestAudio).
+2.Add the interface to retrieve chip silk printing information ,retrieve chip software version information, and retrieve chip FLASH information.
+
+2/29/2016
+1.Split TestAudio interface for special factory, and load remap IO when in testIO.
+
+2/25/2016
+1.Optimize processsion for part of function(Initilize、EnterTestMode).
+2.Add function to show get last error information and add function to get test result for dll.
+
+2/23/2016
+1.Add audio test interface;
+2.Add RF test interface when using 8852A/B to test.
+
+2/18/2016
+1.Release V1.0;

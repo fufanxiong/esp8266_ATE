@@ -1,0 +1,116 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    WorkingDir=".">
+    <Config
+        Name="Release"
+        OutputFile=""
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec CmdLine='"BT_ATE.exe"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Files>
+        <Folder
+            Name="Source Files"
+            Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl"
+            GUID="{A6D1C0F0-6B5D-4F5F-58D4-FC479B069CAC}">
+            <F N="conectDev.cpp"/>
+            <F N="Config.cpp"/>
+            <F N="config_deal.cpp"/>
+            <F N="err.cpp"/>
+            <F N="fft.cpp"/>
+            <F N="GPIB.cpp"/>
+            <F N="input_address.cpp"/>
+            <F N="new_date.cpp"/>
+            <F N="new_password.cpp"/>
+            <F N="Newdevice.cpp"/>
+            <F N="password.cpp"/>
+            <F N="PD218.cpp"/>
+            <F N="PD218Dlg.cpp"/>
+            <F N="selDutCom.cpp"/>
+            <F N="SortHeaderCtrl.cpp"/>
+            <F N="SortListCtrl.cpp"/>
+            <F N="StdAfx.cpp"/>
+            <F N="TestItem.cpp"/>
+            <F N="tset.cpp"/>
+        </Folder>
+        <Folder
+            Name="Header Files"
+            Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if"
+            GUID="{12FE1B7E-E192-48BC-35EB-668A4C5A609C}">
+            <F N="ac6652_lib.h"/>
+            <F N="CommHead.h"/>
+            <F N="Config.h"/>
+            <F N="config_deal.h"/>
+            <F N="err.h"/>
+            <F N="GPIB.h"/>
+            <F N="input_address.h"/>
+            <F N="new_date.h"/>
+            <F N="new_password.h"/>
+            <F N="Newdevice.h"/>
+            <F N="password.h"/>
+            <F N="PD218.h"/>
+            <F N="PD218Dlg.h"/>
+            <F N="resource.h"/>
+            <F N="selDutCom.h"/>
+            <F N="SortHeaderCtrl.h"/>
+            <F N="SortListCtrl.h"/>
+            <F N="StdAfx.h"/>
+            <F N="TestEngine.h"/>
+            <F N="TestHeader.h"/>
+            <F N="TestItem.h"/>
+            <F N="tset.h"/>
+        </Folder>
+        <Folder
+            Name="Resource Files"
+            Filters="*.ico;*.cur;*.dlg"
+            GUID="{1C104916-B45C-43C1-D05C-814D5B9310B6}"></Folder>
+        <Folder
+            Name="Bitmaps"
+            Filters="*.bmp"
+            GUID="{A3E61AB0-874B-4B22-6C0A-85389F37D198}"/>
+        <Folder
+            Name="Other Files"
+            Filters=""
+            GUID="{53C0ED72-3B7A-4C16-8198-279B71FABFAC}"></Folder>
+    </Files>
+</Project>

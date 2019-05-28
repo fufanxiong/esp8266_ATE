@@ -1,0 +1,11 @@
+cmd log/
+Debug/
+loader/
+log/
+Release/
+res/
+SourceInsight/
+temp/
+TestEngine/
+TriadFile/
+*.dll

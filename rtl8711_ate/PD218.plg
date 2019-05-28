@@ -1,0 +1,155 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PD218 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/PD218.res" /d "_DEBUG" "G:\ATE\rtl8711_ate\PD218.rc"" 
+Creating temporary file "C:\DOCUME~1\jingxun\LOCALS~1\Temp\RSP318.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "C:\Program Files\IVI Foundation\VISA\WinNT\Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D _WIN32_WINNT=0X0500 /FR"Debug/" /Fp"Debug/PD218.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\ATE\rtl8711_ate\agilent_n4010_wlantest.cpp"
+"G:\ATE\rtl8711_ate\audioRouting.cpp"
+"G:\ATE\rtl8711_ate\audioSacle.cpp"
+"G:\ATE\rtl8711_ate\conectDev.cpp"
+"G:\ATE\rtl8711_ate\Config.cpp"
+"G:\ATE\rtl8711_ate\config_deal.cpp"
+"G:\ATE\rtl8711_ate\config_set.cpp"
+"G:\ATE\rtl8711_ate\Dongle.cpp"
+"G:\ATE\rtl8711_ate\err.cpp"
+"G:\ATE\rtl8711_ate\GPIB.cpp"
+"G:\ATE\rtl8711_ate\input_address.cpp"
+"G:\ATE\rtl8711_ate\ledAdcCal.cpp"
+"G:\ATE\rtl8711_ate\new_date.cpp"
+"G:\ATE\rtl8711_ate\new_password.cpp"
+"G:\ATE\rtl8711_ate\Newdevice.cpp"
+"G:\ATE\rtl8711_ate\password.cpp"
+"G:\ATE\rtl8711_ate\PD218.cpp"
+"G:\ATE\rtl8711_ate\PD218Dlg.cpp"
+"G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp"
+"G:\ATE\rtl8711_ate\selDir.cpp"
+"G:\ATE\rtl8711_ate\selDutCom.cpp"
+"G:\ATE\rtl8711_ate\setpar.cpp"
+"G:\ATE\rtl8711_ate\SortHeaderCtrl.cpp"
+"G:\ATE\rtl8711_ate\SortListCtrl.cpp"
+"G:\ATE\rtl8711_ate\TestItem.cpp"
+"G:\ATE\rtl8711_ate\tset.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\jingxun\LOCALS~1\Temp\RSP318.tmp" 
+Creating temporary file "C:\DOCUME~1\jingxun\LOCALS~1\Temp\RSP319.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "C:\Program Files\IVI Foundation\VISA\WinNT\Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D _WIN32_WINNT=0X0500 /FR"Debug/" /Fp"Debug/PD218.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\ATE\rtl8711_ate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\jingxun\LOCALS~1\Temp\RSP319.tmp" 
+Creating temporary file "C:\DOCUME~1\jingxun\LOCALS~1\Temp\RSP31A.tmp" with contents
+[
+visa32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ESP8266_ATE.pdb" /debug /machine:I386 /out:"Debug/ESP8266_ATE.exe" /pdbtype:sept /libpath:"C:\Program Files\IVI Foundation\VISA\WinNT\lib\msc" 
+.\Debug\agilent_n4010_wlantest.obj
+.\Debug\audioRouting.obj
+.\Debug\audioSacle.obj
+.\Debug\conectDev.obj
+.\Debug\Config.obj
+.\Debug\config_deal.obj
+.\Debug\config_set.obj
+.\Debug\Dongle.obj
+.\Debug\err.obj
+.\Debug\GPIB.obj
+.\Debug\input_address.obj
+.\Debug\ledAdcCal.obj
+.\Debug\new_date.obj
+.\Debug\new_password.obj
+.\Debug\Newdevice.obj
+.\Debug\password.obj
+.\Debug\PD218.obj
+.\Debug\PD218Dlg.obj
+.\Debug\rfpwr_loss_cal.obj
+.\Debug\selDir.obj
+.\Debug\selDutCom.obj
+.\Debug\setpar.obj
+.\Debug\SortHeaderCtrl.obj
+.\Debug\SortListCtrl.obj
+.\Debug\StdAfx.obj
+.\Debug\TestItem.obj
+.\Debug\tset.obj
+.\Debug\PD218.res
+]
+Creating command line "link.exe @C:\DOCUME~1\jingxun\LOCALS~1\Temp\RSP31A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+agilent_n4010_wlantest.cpp
+audioRouting.cpp
+audioSacle.cpp
+conectDev.cpp
+G:\ATE\rtl8711_ate\conectDev.cpp(546) : warning C4102: '__err_out' : unreferenced label
+Config.cpp
+config_deal.cpp
+config_set.cpp
+Dongle.cpp
+err.cpp
+GPIB.cpp
+input_address.cpp
+ledAdcCal.cpp
+new_date.cpp
+new_password.cpp
+Newdevice.cpp
+password.cpp
+PD218.cpp
+PD218Dlg.cpp
+G:\ATE\rtl8711_ate\PD218Dlg.cpp(2416) : warning C4101: 'e' : unreferenced local variable
+G:\ATE\rtl8711_ate\PD218Dlg.cpp(2420) : warning C4101: 'e' : unreferenced local variable
+G:\ATE\rtl8711_ate\PD218Dlg.cpp(2425) : warning C4101: 'e' : unreferenced local variable
+rfpwr_loss_cal.cpp
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(491) : warning C4102: '__err' : unreferenced label
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(1211) : warning C4305: 'return' : truncation from 'const int' to 'bool'
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(1219) : warning C4305: 'return' : truncation from 'const int' to 'bool'
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(769) : warning C4101: 'ret' : unreferenced local variable
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(1263) : warning C4101: 'e' : unreferenced local variable
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(1267) : warning C4101: 'e' : unreferenced local variable
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(1271) : warning C4101: 'e' : unreferenced local variable
+selDir.cpp
+Generating Code...
+G:\ATE\rtl8711_ate\rfpwr_loss_cal.cpp(1277) : warning C4715: 'rfpwr_loss_cal::do_4010_test' : not all control paths return a value
+Compiling...
+selDutCom.cpp
+setpar.cpp
+SortHeaderCtrl.cpp
+SortListCtrl.cpp
+TestItem.cpp
+G:\ATE\rtl8711_ate\TestItem.cpp(4155) : warning C4101: 'show_mac' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(6215) : warning C4101: 'ret' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(6321) : warning C4101: 'ret' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(6321) : warning C4101: 'i' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(6488) : warning C4101: 'ret' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(6488) : warning C4101: 'j' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(7404) : warning C4101: 'ret' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(7445) : warning C4101: 'ret' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(7812) : warning C4101: 'i' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(8554) : warning C4101: 'fre_offset_Index' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(8595) : warning C4101: 'current_power' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(8554) : warning C4101: 'temp' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(10458) : warning C4101: 'i' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(12930) : warning C4101: 'mac_end' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(12931) : warning C4101: 'temp' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(12932) : warning C4101: 'i' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(12929) : warning C4101: 'mac_head' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(13018) : warning C4101: 'ret_end' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(13018) : warning C4101: 'ret_head' : unreferenced local variable
+G:\ATE\rtl8711_ate\TestItem.cpp(13158) : warning C4101: 'findnext' : unreferenced local variable
+tset.cpp
+Generating Code...
+G:\ATE\rtl8711_ate\TestItem.cpp(8780) : warning C4700: local variable 'current_Index_tx' used without having been initialized
+Linking...
+
+
+
+<h3>Results</h3>
+ESP8266_ATE.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
